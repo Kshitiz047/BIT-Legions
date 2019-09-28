@@ -6,74 +6,39 @@ Select a problem from the following list and solve it.
 its okay if you want to solve a question that has already been solved.
 Create a user defined funtion and call it inside the main funtion.
 Happy coding!
-*/
 
-/* Q1 )  Write a program in C++ that converts kilometers per hour to meter per second.
-	 Start your code here (where this comment ends).
-	 for ease comment your name email 
-*/
-
-
-
-/* Q2 )  Write a program in C++ which swap the values of two variables not using third variable
-	 Start your code here (where this comment ends).
-	 for ease comment your name email 
-*/
-
-
-
-/* Q3 )  Write a program in C++ to display distinct elements from an array.
-	 Start your code here (where this comment ends).
-	 for ease comment your name email 
-*/
-
-
-
-/* Q4 ) Write a program in C++ to find the area and circumference of a circle.
+Q9 ) Write a program in C++ to check if string is palindrome.
 	Start your code here (where this comment ends).
 	for ease comment your name email 
 */
 
 
+#include <iostream>
 
+using namespace std;
 
-/* Q5 ) Write a program in C++ to find the sum of the array elements.
-	Start your code here (where this comment ends).
-	for ease comment your name email 
-*/
-
-
-
-/* Q6 ) Write a program in C++ to implement binary search.
-	Start your code here (where this comment ends).
-	for ease comment your name email 
-*/
-
-
-/* Q7 ) Write a program in C++ to find the largest smallest and average of the array.
-	Start your code here (where this comment ends).
-	for ease comment your name email 
-*/
-
-
-/* Q8 ) Write a program in C++ to reverse a string.
-	Start your code here (where this comment ends).
-	for ease comment your name email 
-*/
-
-
-/* Q9 ) Write a program in C++ to check if string is palindrome.
-	Start your code here (where this comment ends).
-	for ease comment your name email 
-*/
-
-
-/* Q10 ) Write a program in C++ to insert a element in linked list.
-	Start your code here (where this comment ends).
-	for ease comment your name email 
-*/
-
+void pallindrome()
+{
+   int n, num, digit, rev = 0;
+     cout << "Enter a positive number: ";
+     cin >> num;
+     n = num;
+     do
+     {
+         digit = num % 10;
+         rev = (rev * 10) + digit;
+         num = num / 10;
+     } while (num != 0);
+     cout << " The reverse of the number is: " << rev << endl;
+     if (n == rev)
+         cout << " The number is a palindrome.";
+     else
+         cout << " The number is not a palindrome.";
+   
+}
 int main()
 {
-
+    
+    pallindrome();
+    
 }
